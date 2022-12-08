@@ -95,6 +95,15 @@ section .cards .card {
 
 }
 
+/*Estilos de section index*/
+
+.section-index .cards {
+    align-self: center;
+
+}
+
+
+
 /*Estilos de section video*/
 
 .section-index-video {
@@ -138,6 +147,19 @@ section .cards .card {
     @extend %estiloIframes;
 }
 
+.arriba div {
+
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: rgb(253, 148, 19);
+        text-align: center;
+    }
+
+}
+
+
 
 /*estilos de footer*/
 
@@ -146,8 +168,28 @@ footer div a {
     color: tomato
 }
 
-.footer-index h5 {
-@include footer;
+
+
+
+.footer-index {
+    background-color: rgb(255, 236, 212);
+    h5 {
+        @include footer;
+    }
+    .social {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        div {
+            margin-top: 10px;
+            height: auto;
+            width: auto;
+            text-align: center;
+            img {
+                width: 30%;
+            }
+        }
+    }
 }
 
 
@@ -234,7 +276,8 @@ footer div a {
 
     .section-index .cards {
         display: flex;
-        justify-content: space-around;
+        flex-direction: row;
+        width: 100%;
 
         .cards .card {
             margin: 1rem 1rem 1rem 0rem;
