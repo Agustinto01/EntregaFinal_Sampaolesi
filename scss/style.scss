@@ -127,6 +127,7 @@ section .cards .card {
     text-shadow: 1px 1px 3px black;
     align-self: auto;
     font-size: large;
+    margin-top: 20px;
 
 }
 
@@ -276,7 +277,7 @@ footer div a {
 
     .section-index .cards {
         display: flex;
-        flex-direction: row;
+        justify-content: center;
         width: 100%;
 
         .cards .card {
