@@ -17,7 +17,7 @@ h2 {
   text-align: center;
   margin-bottom: 2rem; }
 
-.footer-contacto h3 {
+.footer {
   margin-top: 0.5rem;
   font-size: small;
   text-align: center; }
@@ -38,7 +38,7 @@ h2 {
   padding-top: 2%;
   /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */ }
 
-.footer-nuestroestudio h3 {
+.footer h3 {
   margin-top: 0.5rem;
   font-size: small;
   text-align: center; }
@@ -58,7 +58,7 @@ h2 {
   margin: auto;
   opacity: 60%; }
 
-.footer-servicios h4 {
+.footer h4 {
   margin-top: 0.5rem;
   font-size: small;
   text-align: center; }
@@ -72,10 +72,12 @@ h2 {
     text-align: justify;
     padding: 1rem; }
 
-.footer-sobremi h2 {
+.footer {
   margin-top: 0.5rem;
   font-size: small;
   text-align: center; }
+  .footer h2 {
+    font-size: small; }
 
 * {
   /* outline: solid 1px red; */
@@ -98,7 +100,7 @@ body {
 .color-menu {
   background-color: #fad6a9; }
 
-.logo :hover {
+.logo:hover {
   box-shadow: 1px 1px 2px black;
   transform: scale(0.9); }
 
@@ -140,6 +142,9 @@ section .cards .card {
   margin: 1rem 1rem 1rem 0rem; }
 
 /*Estilos de section index*/
+.section-index {
+  align-items: center; }
+
 .section-index .cards {
   align-self: center; }
 
@@ -174,30 +179,25 @@ section .cards .card {
   text-align: center; }
   .arriba div a {
     text-decoration: none;
-    color: #fd9413;
-    text-align: center; }
+    color: #fd9413; }
 
 /*estilos de footer*/
-footer div a {
-  text-decoration: none;
-  color: tomato; }
-
-.footer-index {
+.footer {
   background-color: #ffecd4; }
-  .footer-index h5 {
+  .footer h5 {
     margin-top: 0.5rem;
     font-size: small;
     text-align: center; }
-  .footer-index .social {
+  .footer .social {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
-    .footer-index .social div {
+    .footer .social div {
       margin-top: 10px;
       height: auto;
       width: auto;
       text-align: center; }
-      .footer-index .social div img {
+      .footer .social div img {
         width: 30%; }
 
 @media screen and (min-width: 800px) {
@@ -227,6 +227,8 @@ footer div a {
       display: inline;
       align-items: center;
       color: black; }
+    .main-index p {
+      font-size: medium; }
   /* main Sobre mi */
   .main-sobremi {
     display: grid;
@@ -266,5 +268,9 @@ footer div a {
     .section-index-video .section-index-video-div {
       grid-area: section-index-video-div; }
   /* Estilos de footer */
-  footer {
+  .footer {
     margin-top: 2rem; } }
+
+@media screen and (min-width: 1024px) {
+  .main-index p {
+    font-size: x-large; } }

@@ -9,6 +9,10 @@
 }
 
 
-.footer-sobremi h2 {
-    @include footer;
+.footer {
+   @include footer;
+    h2{
+        
+        font-size: small;
+    }
 }

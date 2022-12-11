@@ -23,10 +23,10 @@
     <div class="container-fluid color-container fuente-container" id="arriba">
         <!--Encabezado del proyecto-->
         <header class="row sticky-top">
-            <!-- logotipo institucional-->
             <nav class="navbar navbar-expand-lg color-menu">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="../index.html">
+                        <!-- logotipo institucional-->
                         <img src="../img/Logo2.png" class="logo" alt="Logotipo empresa">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -56,65 +56,87 @@
                 </div>
             </nav>
         </header>
-        <div class="contacto">
-            <h1>Estudio Jurídico<span> Dra. Alonso</span></h1>
 
-            <h2>Envianos tu consulta</h2>
+        <!--Titulos-->
+
+        <main class="contacto">
+            
+                <h1>Estudio Jurídico<span> Dra. Alonso</span></h1>
+
+                <h2>Envianos tu consulta</h2>
+
+                <!--Formulario de contacto-->
+                <form class="row g-3 col-6">
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Tu nombre</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="Juan Perez">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Tu email</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="tuemail@mail.com">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Tu país</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Argentina</option>
+                            <option value="1">Uruguay</option>
+                            <option value="2">Chile</option>
+                            <option value="3">Bolivia</option>
+                            <option value="4">Brasil</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-text">Envianos tu consulta</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+
+                    <div class="col-12">
+                        <button class="btn btn-light color-boton" type="submit">Enviar</button>
+                    </div>
+
+                </form>
+        </main>
 
 
-            <form class="row g-3 col-6">
-
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Tu nombre</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-default" placeholder="Juan Perez">
-                </div>
-
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Tu email</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-default" placeholder="tuemail@mail.com">
-                </div>
-
-                <div class="input-group mb-3">
-                    <label class="input-group-text" for="inputGroupSelect01">Tu país</label>
-                    <select class="form-select" id="inputGroupSelect01">
-                        <option selected>Argentina</option>
-                        <option value="1">Uruguay</option>
-                        <option value="2">Chile</option>
-                        <option value="3">Bolivia</option>
-                        <option value="4">Brasil</option>
-                    </select>
-                </div>
-
-                <div class="input-group">
-                    <span class="input-group-text">Envianos tu consulta</span>
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
-                </div>
-
-                <div class="col-12">
-                    <button class="btn btn-light color-boton" type="submit">Enviar</button>
-                </div>
-
-            </form>
-
-        </div>
-
-
-        <!-- Etiqueta para contener los derechos de autor-->
-        <footer class="footer-contacto">
+        </section>
+        <!-- enlace interno-->
+        <section class="arriba">
             <div>
-                <!-- enlace interno-->
                 <a href="#arriba">Ir arriba</a>
-                <h3>Todos los derechos reservados</h3>
             </div>
+        </section>
+        <!--Enlaces para redes sociales-->
+        <footer class="footer">
+            <div class="social">
+                <div><a href="https://www.facebook.com" target="_blank"> <img src="../img/Facebook.png"
+                            alt="Link a facebook">
+                    </a></div>
+                <div><a href="https://www.instagram.com" target="_blank"> <img src="../img/Instagram.png"
+                            alt="Link a Instagram"> </a></div>
+                <div><a href="https://twitter.com" target="_blank"> <img src="../img/Twitter.png" alt="Link a Twitter">
+                    </a>
+                </div>
+                <div><a href="https://www.youtube.com" target="_blank"> <img src="../img/Youtube.png"
+                            alt="Link a Youtube"></a></div>
+                <div><a href="https://web.whatsapp.com" target="_blank"> <img src="../img/Whatsapp.png"
+                            alt="Link a Whatsapp"></a></div>
+            </div>
+            <!-- Etiqueta para contener los derechos de autor-->
+            <h3>Todos los derechos reservados</h3>
+
         </footer>
 
-    </div>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
 
 
 </body>

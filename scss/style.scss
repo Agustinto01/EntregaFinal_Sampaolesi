@@ -40,7 +40,7 @@ body {
     background-color: $color-menu;
 }
 
-.logo :hover {
+.logo:hover {
     box-shadow: 1px 1px 2px black;
     transform: scale(0.9);
 }
@@ -96,6 +96,10 @@ section .cards .card {
 }
 
 /*Estilos de section index*/
+.section-index {
+    align-items: center;
+}
+
 
 .section-index .cards {
     align-self: center;
@@ -155,43 +159,39 @@ section .cards .card {
     a {
         text-decoration: none;
         color: rgb(253, 148, 19);
-        text-align: center;
+        
     }
 
 }
-
-
 
 /*estilos de footer*/
 
-footer div a {
-    text-decoration: none;
-    color: tomato
-}
-
-
-
-
-.footer-index {
+.footer {
     background-color: rgb(255, 236, 212);
+
     h5 {
         @include footer;
     }
+
     .social {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+
         div {
             margin-top: 10px;
             height: auto;
             width: auto;
             text-align: center;
+
             img {
                 width: 30%;
             }
         }
     }
 }
+
+
 
 
 @media screen and (min-width: 800px) {
@@ -239,7 +239,13 @@ footer div a {
             align-items: center;
             color: black;
         }
+        p{
+            font-size:medium;
+        }
     }
+
+
+
 
     /* main Sobre mi */
 
@@ -275,6 +281,7 @@ footer div a {
 
     /*Estilos de section index*/
 
+
     .section-index .cards {
         display: flex;
         justify-content: center;
@@ -301,6 +308,7 @@ footer div a {
 
         h3 {
             grid-area: h3;
+
         }
 
         a {
@@ -314,8 +322,15 @@ footer div a {
 
     /* Estilos de footer */
 
-    footer {
+    .footer {
         margin-top: 2rem;
     }
 
+}
+
+
+@media screen and (min-width: 1024px) {
+    .main-index p{
+        font-size:x-large;
+    }
 }

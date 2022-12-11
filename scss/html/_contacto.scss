@@ -11,8 +11,9 @@
 h2 {
     text-align: center;
     margin-bottom: 2rem;
+    
 }
 
-.footer-contacto h3 {
+.footer{
     @include footer;
 }
